@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - NEP JOB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white min-h-screen text-gray-800 font-sans">
+  <div class="max-w-xl mx-auto p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Application Fee: Rs.300</h2>
+    <p class="mb-6 text-gray-600">Scan the QR code below to make the payment.</p>
+
+    <img src="assets/qr-code.png" alt="QR Code" class="w-60 mx-auto mb-6 shadow rounded-lg"/>
+
+    <form action="thankyou.html" method="GET" enctype="multipart/form-data">
+      <label class="block mb-2 font-medium">Upload Payment Screenshot</label>
+      <input type="file" name="paymentProof" required class="block w-full text-sm text-gray-600 bg-white border rounded px-4 py-2 shadow mb-6"/>
+
+      <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 shadow-lg transition">
+        Submit Application ✔
+      </button>
+    </form>
+  </div>
+</body>
+</html>
